@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102235">
+  <meta name="description" content="Roteiro interativo de Natal 2026: Viena, Praga, Budapeste e Bratislava.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Natal 2026">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="icon" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <title>Natal 2026 | Roteiro</title>
+</head>
+<body>
+  <main id="app" class="app-shell">
+    <section id="screen-home" class="screen is-active" aria-labelledby="home-title"></section>
+    <section id="screen-itinerary" class="screen" aria-labelledby="itinerary-title"></section>
+    <section id="screen-costs" class="screen" aria-labelledby="costs-title"></section>
+    <section id="screen-guide" class="screen" aria-labelledby="guide-title"></section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button class="nav-button is-active" data-screen="home" type="button"><span class="nav-icon">✦</span><span>Hoje</span></button>
+    <button class="nav-button" data-screen="itinerary" type="button"><span class="nav-icon">☰</span><span>Roteiro</span></button>
+    <button class="nav-button" data-screen="costs" type="button"><span class="nav-icon">€</span><span>Custos</span></button>
+    <button class="nav-button" data-screen="guide" type="button"><span class="nav-icon">◎</span><span>Guia</span></button>
+  </nav>
+
+  <dialog id="activity-dialog" class="activity-dialog">
+    <article class="dialog-card">
+      <button class="dialog-close" type="button" aria-label="Fechar detalhes">×</button>
+      <img id="dialog-image" class="dialog-image" alt="">
+      <div class="dialog-content">
+        <p id="dialog-label" class="eyebrow"></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <div class="dialog-meta">
+          <span id="dialog-time"></span>
+          <span id="dialog-cost"></span>
+        </div>
+        <a id="dialog-maps" class="maps-button" href="#" target="_blank" rel="noopener">⌖ Abrir no Google Maps</a>
+      </div>
+    </article>
+  </dialog>
+
+  <template id="toast-template"><div class="toast" role="status"></div></template>
+  <script src="./storage.js?v=2"></script>
+  <script src="./app.js?v=3"></script>
+</body>
+</html>
