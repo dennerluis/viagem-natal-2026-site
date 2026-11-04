@@ -5,14 +5,14 @@
   const trip = {
     title: 'Natal Europeu 2026',
     dateRange: '06 a 13 de dezembro',
-    travelers: 6,
+    travelers: 5,
     days: [
       {
         date: '06/12', short: 'Dom', city: 'Viena', title: 'Chegada e primeira noite de Natal', image: 'vienna-stephansdom.jpg',
         intro: 'Bratislava como porta de entrada, depois centro imperial de Viena e Rathausplatz iluminado.',
         items: [
           { time: '09:30', title: 'Pouso em Bratislava', category: 'Chegada', desc: 'Chegada no Aeroporto de Bratislava. Façam imigração, banheiro e organizem as malas antes do ônibus.', maps: 'Bratislava Airport BTS', image: 'bratislava-castle-market.jpg', cost: 'Voo já pago: €66 por pessoa' },
-          { time: '11:30', title: 'Ônibus direto para Wien Hbf', category: 'Transporte', desc: 'Slovak Lines direto do aeroporto de Bratislava para a estação central de Viena. Horário final a confirmar.', maps: 'Wien Hauptbahnhof Vienna', image: 'vienna-stephansdom.jpg', cost: '€10 estimado por pessoa' },
+          { time: '11:30', title: 'Ônibus direto para Wien Hbf', category: 'Transporte', desc: 'Ônibus direto do aeroporto de Bratislava para a estação central de Viena. Horário final a confirmar.', maps: 'Wien Hauptbahnhof Vienna', image: 'vienna-stephansdom.jpg', cost: '€7 por pessoa' },
           { time: '14:00', title: 'Centro imperial a pé', category: 'Passeio gratuito', desc: 'Stephansplatz, Stephansdom por fora, Graben, Kohlmarkt, Hofburg, Heldenplatz, Maria-Theresien-Platz e Ópera por fora.', maps: 'Stephansplatz Vienna', image: 'vienna-stephansdom.jpg', cost: 'Gratuito' },
           { time: '18:00', title: 'Rathausplatz Christmas Market', category: 'Christmas Market', desc: 'Primeiro mercado de Natal, com jantar e vinho quente. Noite leve para descansar antes de Praga.', maps: 'Vienna Christmas Market Rathausplatz', image: 'vienna-stephansdom.jpg', cost: 'Consumo a registrar' }
         ]
@@ -21,11 +21,11 @@
         date: '07/12', short: 'Seg', city: 'Viena → Praga', title: 'Viena essencial e Pub Crawl', image: 'vienna-belvedere.jpg',
         intro: 'Manhã sem entradas pagas, Railjet para Praga e a primeira grande noite da viagem.',
         items: [
-          { time: '08:30', title: 'Checkout e malas', category: 'Hospedagem', desc: 'Café, checkout no JO&JOE e malas guardadas no hostel ou em locker na estação central.', maps: 'JO&JOE Vienna', image: 'vienna-belvedere.jpg', cost: 'Hostel: €29 por pessoa' },
+          { time: '08:30', title: 'Checkout e malas', category: 'Hospedagem', desc: 'Café, checkout e saída do apartamento em Josefstadt. Organizem as malas antes de seguir para a estação central.', maps: '10 Schlösselgasse, 1080 Vienna, Austria', image: 'vienna-belvedere.jpg', cost: 'Apartamento: €37,80 por pessoa' },
           { time: '09:30', title: 'Belvedere por fora ou Karlsplatz', category: 'Passeio gratuito', desc: 'Escolham Belvedere e jardins, perto da estação, ou Karlsplatz e Karlskirche por fora no centro.', maps: 'Belvedere Palace Vienna', image: 'vienna-belvedere.jpg', cost: 'Gratuito' },
-          { time: 'Após almoço', title: 'Railjet para Praga', category: 'Transporte', desc: 'Trem direto Viena → Praga. Horário ainda a confirmar. A viagem leva aproximadamente 3h57.', maps: 'Wien Hauptbahnhof Vienna', image: 'prague-old-town-market.jpg', cost: '€17 estimado por pessoa' },
+          { time: 'Após almoço', title: 'Trem direto para Praga', category: 'Transporte', desc: 'Trem direto Viena → Praga. Horário ainda a confirmar. A viagem leva aproximadamente 4 horas.', maps: 'Wien Hauptbahnhof Vienna', image: 'prague-old-town-market.jpg', cost: '€17,20 por pessoa' },
           { time: '19:30', title: 'Old Town Square Christmas Market', category: 'Christmas Market', desc: 'Primeira vista de Praga iluminada, Relógio Astronômico por fora e jantar rápido antes da festa.', maps: 'Old Town Square Prague', image: 'prague-old-town-market.jpg', cost: 'Consumo a registrar' },
-          { time: '22:00', title: 'Drunken Monkey Pub Crawl', category: 'Noite confirmada', desc: 'Encontro no próprio Drunken Monkey Hostel. A programação do dia seguinte começa apenas ao meio-dia.', maps: 'Drunken Monkey Hostel Prague', image: 'prague-charles-bridge.jpg', cost: '€32 por pessoa, confirmado' }
+          { time: '22:00', title: 'Drunken Monkey Pub Crawl', category: 'Noite planejada', desc: 'Encontro no próprio Drunken Monkey Hostel. O valor será pago na hora e ainda precisa ser confirmado.', maps: 'Drunken Monkey Hostel Prague', image: 'prague-charles-bridge.jpg', cost: 'Valor em aberto, estimativa de €6,40 por pessoa' }
         ]
       },
       {
@@ -33,7 +33,7 @@
         intro: 'Dia começa ao meio-dia para respeitar a ressaca. Castelo de Praga é a única atração paga.',
         items: [
           { time: 'Até 12:00', title: 'Dormir, banho e brunch', category: 'Recuperação', desc: 'Sem alarme depois do Pub Crawl. Tomem um brunch reforçado perto do hostel antes de sair.', maps: 'Drunken Monkey Hostel Prague', image: 'prague-charles-bridge.jpg', cost: 'Consumo a registrar' },
-          { time: '12:30', title: 'Castelo de Praga, Main Circuit', category: 'Entrada paga', desc: 'St. Vitus Cathedral, Old Royal Palace, St. George’s Basilica e Golden Lane. Reservem cerca de 3h15.', maps: 'Prague Castle', image: 'prague-st-vitus.jpg', cost: '450 CZK, aprox. €18,44 por pessoa' },
+          { time: '12:30', title: 'Castelo de Praga, Main Circuit', category: 'Entrada a confirmar', desc: 'St. Vitus Cathedral, Old Royal Palace, St. George’s Basilica e Golden Lane. Reservem cerca de 3h15. A entrada ainda não foi fechada.', maps: 'Prague Castle', image: 'prague-st-vitus.jpg', cost: 'Valor a confirmar' },
           { time: '16:00', title: 'Malá Strana e Lennon Wall', category: 'Passeio gratuito', desc: 'Almoço tardio em Malá Strana, St. Nicholas por fora e Lennon Wall.', maps: 'Lennon Wall Prague', image: 'prague-lennon-wall.jpg', cost: 'Gratuito' },
           { time: '17:45', title: 'Charles Bridge iluminada', category: 'Passeio gratuito', desc: 'Em dezembro escurece cedo. A ponte iluminada é uma das imagens mais bonitas de Praga.', maps: 'Charles Bridge Prague', image: 'prague-charles-bridge.jpg', cost: 'Gratuito' },
           { time: '18:45', title: 'Klementinum por fora e mercados', category: 'Christmas Market', desc: 'Passagem pela entrada do Klementinum, Old Town Square e, se houver energia, Wenceslas Square.', maps: 'Klementinum Prague', image: 'prague-old-town-market.jpg', cost: 'Gratuito, consumo a registrar' }
@@ -47,14 +47,14 @@
           { time: '11:15', title: 'Torre da Pólvora e Municipal House', category: 'Passeio gratuito', desc: 'Foto externa da Torre da Pólvora, Municipal House por fora e caminhada pela Na Příkopě.', maps: 'Powder Tower Prague', image: 'prague-powder-tower.jpg', cost: 'Gratuito' },
           { time: '13:30', title: 'Tempo livre no centro', category: 'Livre', desc: 'Cafés, compras, pontos favoritos ou mais tempo na Old Town antes de pegar as malas.', maps: 'Old Town Square Prague', image: 'prague-old-town-market.jpg', cost: 'Consumo a registrar' },
           { time: '16:00', title: 'Último Christmas Market', category: 'Christmas Market', desc: 'Jantar cedo e última caminhada no centro iluminado.', maps: 'Old Town Square Prague', image: 'prague-old-town-market.jpg', cost: 'Consumo a registrar' },
-          { time: '21:58', title: 'Trem noturno EN 477 para Budapeste', category: 'Transporte confirmado', desc: 'Beliche confirmado. Cheguem à Praha hl.n. com antecedência e tenham documentos e carregadores acessíveis.', maps: 'Praha hlavní nádraží', image: 'prague-charles-bridge.jpg', cost: '€48 por pessoa, confirmado' }
+          { time: 'Noite', title: 'Ônibus noturno direto para Budapeste', category: 'Transporte confirmado', desc: 'Ônibus noturno direto, sem conexão. Confiram no bilhete o terminal de saída e cheguem com antecedência.', maps: 'ÚAN Florenc Prague', image: 'prague-charles-bridge.jpg', cost: '€27,50 por pessoa, confirmado' }
         ]
       },
       {
         date: '10/12', short: 'Qui', city: 'Budapeste', title: 'Danúbio, Parlamento e ruin bars', image: 'budapest-parliament-night.jpg',
-        intro: 'Chegada cedo do trem noturno e primeira volta pelos ícones de Pest.',
+        intro: 'Chegada cedo do ônibus noturno e primeira volta pelos ícones de Pest.',
         items: [
-          { time: '08:30', title: 'Chegada e café', category: 'Chegada', desc: 'Chegada aproximada do trem, café e malas no Hive Hostel ou em locker até o quarto ficar disponível.', maps: 'Budapest Nyugati Railway Station', image: 'budapest-parliament-night.jpg', cost: 'Hostel: €40 por pessoa, 2 noites' },
+          { time: '08:30', title: 'Chegada e café', category: 'Chegada', desc: 'Chegada aproximada do ônibus, café e malas no Hive Hostel ou em locker até o quarto ficar disponível.', maps: 'The Hive Party Hostel Budapest', image: 'budapest-parliament-night.jpg', cost: 'Hostel: €36,43 por pessoa, 2 noites' },
           { time: '10:00', title: 'Parlamento e Shoes on the Danube', category: 'Passeio gratuito', desc: 'Ver o Parlamento pela margem do Danúbio e visitar o memorial Shoes on the Danube.', maps: 'Hungarian Parliament Building Budapest', image: 'budapest-parliament-night.jpg', cost: 'Gratuito' },
           { time: '13:00', title: 'Chain Bridge e Basílica por fora', category: 'Passeio gratuito', desc: 'Atravessar a Chain Bridge e passar pela Basílica de Santo Estêvão sem entrada paga.', maps: 'Chain Bridge Budapest', image: 'budapest-chain-bridge.jpg', cost: 'Gratuito' },
           { time: '15:00', title: 'Váci utca', category: 'Passeio gratuito', desc: 'Ruas centrais para caminhar, cafés e compras.', maps: 'Váci utca Budapest', image: 'budapest-parliament-night.jpg', cost: 'Consumo a registrar' },
@@ -62,24 +62,24 @@
         ]
       },
       {
-        date: '11/12', short: 'Sex', city: 'Budapeste', title: 'Buda, City Park e Boat Party', image: 'budapest-fishermans-bastion.jpg',
-        intro: 'Vistas do lado de Buda durante o dia e festa no Danúbio às 22:30.',
+        date: '11/12', short: 'Sex', city: 'Budapeste', title: 'Buda, City Park e Pub Crawl', image: 'budapest-fishermans-bastion.jpg',
+        intro: 'Vistas do lado de Buda durante o dia e pub crawl do Hive à noite.',
         items: [
           { time: '10:00', title: 'Buda Castle e Fisherman’s Bastion', category: 'Passeio gratuito', desc: 'Buda Castle grounds, Igreja de Matias por fora, praça Szentháromság e Fisherman’s Bastion pelas áreas gratuitas.', maps: 'Fisherman’s Bastion Budapest', image: 'budapest-fishermans-bastion.jpg', cost: 'Gratuito' },
           { time: '14:30', title: 'Heroes’ Square e City Park', category: 'Passeio gratuito', desc: 'Heroes’ Square, Vajdahunyad Castle por fora e foto rápida do Széchenyi, sem entrar.', maps: 'Heroes Square Budapest', image: 'budapest-heroes-square.jpg', cost: 'Gratuito' },
-          { time: '18:00', title: 'Descanso e jantar', category: 'Preparação', desc: 'Voltar ao hostel, banho, descanso e jantar antes do encontro da Boat Party.', maps: 'Hive Party Hostel Budapest', image: 'budapest-parliament-night.jpg', cost: 'Consumo a registrar' },
-          { time: '22:30', title: 'Boat Party', category: 'Noite confirmada', desc: 'Encontro no Akadémia 2 Ponton. Confiram o ingresso no dia. O sábado começa ao meio-dia.', maps: 'Akadémia 2 Ponton Budapest', image: 'budapest-parliament-night.jpg', cost: '€62 por pessoa, confirmado' }
+          { time: '18:00', title: 'Descanso e jantar', category: 'Preparação', desc: 'Voltar ao hostel, banho, descanso e jantar antes do encontro do pub crawl.', maps: 'The Hive Party Hostel Budapest', image: 'budapest-parliament-night.jpg', cost: 'Consumo a registrar' },
+          { time: '20:00', title: 'Hive Pub Crawl', category: 'Noite confirmada', desc: 'Encontro às 20h no próprio pub do Hive Hostel. O sábado começa ao meio-dia.', maps: 'The Hive Party Hostel Budapest', image: 'budapest-parliament-night.jpg', cost: '€38,40 por pessoa, confirmado' }
         ]
       },
       {
         date: '12/12', short: 'Sáb', city: 'Budapeste → Bratislava', title: 'Ressaca, Bratislava e último mercado', image: 'bratislava-castle-market.jpg',
-        intro: 'Manhã livre após a Boat Party e noite no centro compacto de Bratislava.',
+        intro: 'Manhã livre após o Pub Crawl e noite no centro compacto de Bratislava.',
         items: [
           { time: 'Até 12:00', title: 'Dormir, banho e checkout', category: 'Recuperação', desc: 'Sem turismo de manhã. Peçam checkout tardio se houver disponibilidade ou deixem malas guardadas.', maps: 'Hive Party Hostel Budapest', image: 'budapest-parliament-night.jpg', cost: 'Sem custo extra confirmado' },
-          { time: '12:00', title: 'Brunch e estação', category: 'Transporte', desc: 'Brunch reforçado e ida à estação para o trem direto Budapeste → Bratislava.', maps: 'Budapest Nyugati Railway Station', image: 'budapest-parliament-night.jpg', cost: 'Consumo a registrar' },
-          { time: '13:00 aprox.', title: 'Trem para Bratislava', category: 'Transporte', desc: 'Horário final a confirmar. A chegada precisa preservar a noite no Christmas Market.', maps: 'Bratislava hlavná stanica', image: 'bratislava-castle-market.jpg', cost: '€14 estimado por pessoa' },
+          { time: '12:00', title: 'Brunch e estação', category: 'Transporte', desc: 'Brunch reforçado e ida à estação para o transporte direto Budapeste → Bratislava.', maps: 'Budapest Nyugati Railway Station', image: 'budapest-parliament-night.jpg', cost: 'Consumo a registrar' },
+          { time: '13:00 aprox.', title: 'Transporte para Bratislava', category: 'Transporte', desc: 'Horário final a confirmar. A chegada precisa preservar a noite no Christmas Market.', maps: 'Bratislava hlavná stanica', image: 'bratislava-castle-market.jpg', cost: '€16,40 por pessoa' },
           { time: 'Fim da tarde', title: 'Castelo de Bratislava por fora', category: 'Passeio opcional', desc: 'Subam apenas se houver energia e luz. Jardins e mirante são gratuitos.', maps: 'Bratislava Castle', image: 'bratislava-castle-market.jpg', cost: 'Gratuito' },
-          { time: '17:30', title: 'Centro histórico e Christmas Market', category: 'Christmas Market', desc: 'Catedral de São Martinho por fora, Michael’s Gate, Čumil, Hlavné námestie e Hviezdoslavovo námestie.', maps: 'Hlavné námestie Bratislava', image: 'bratislava-castle-market.jpg', cost: 'Hostel: €18 por pessoa, consumo a registrar' }
+          { time: '17:30', title: 'Centro histórico e Christmas Market', category: 'Christmas Market', desc: 'Catedral de São Martinho por fora, Michael’s Gate, Čumil, Hlavné námestie e Hviezdoslavovo námestie.', maps: 'Hlavné námestie Bratislava', image: 'bratislava-castle-market.jpg', cost: 'Hostel: €25 por pessoa, consumo a registrar' }
         ]
       },
       {
@@ -94,28 +94,28 @@
     ],
     costs: [
       { id: 'flight', category: 'Voos', title: 'Dublin → Bratislava → Dublin', note: 'Ida e volta. Já pago.', amount: 66, paid: true },
-      { id: 'bus-bts-vienna', category: 'Transporte', title: 'BTS → Viena', note: 'Ônibus Slovak Lines, horário pendente.', amount: 10 },
-      { id: 'hostel-vienna', category: 'Hospedagem', title: 'JO&JOE Viena', note: '1 noite.', amount: 29 },
-      { id: 'train-vienna-prague', category: 'Transporte', title: 'Viena → Praga', note: 'Railjet, horário pendente.', amount: 17 },
-      { id: 'hostel-prague', category: 'Hospedagem', title: 'Drunken Monkey Praga', note: '2 noites.', amount: 40 },
-      { id: 'pubcrawl', category: 'Noite', title: 'Drunken Monkey Pub Crawl', note: '07/12, 22:00 no hostel.', amount: 32 },
-      { id: 'castle-prague', category: 'Atração', title: 'Castelo de Praga, Main Circuit', note: '450 CZK convertido para euro.', amount: 18.44 },
-      { id: 'night-train', category: 'Transporte', title: 'Trem noturno Praga → Budapeste', note: 'Beliche EN 477.', amount: 48 },
-      { id: 'hostel-budapest', category: 'Hospedagem', title: 'Hive Hostel Budapeste', note: '2 noites, quarto de 6 e banheiro privativo.', amount: 40 },
-      { id: 'boat-party', category: 'Noite', title: 'Boat Party Budapeste', note: '11/12, 22:30 no Akadémia 2 Ponton.', amount: 62 },
-      { id: 'train-budapest-bratislava', category: 'Transporte', title: 'Budapeste → Bratislava', note: 'Trem, horário pendente.', amount: 14 },
-      { id: 'hostel-bratislava', category: 'Hospedagem', title: 'Wild Elephants Bratislava', note: '1 noite.', amount: 18 }
+      { id: 'bus-bts-vienna', category: 'Transporte', title: 'BTS → Viena', note: 'Ônibus para cinco pessoas, dividido individualmente.', amount: 7 },
+      { id: 'apartment-vienna', category: 'Hospedagem', title: 'Apartamento em Josefstadt, Viena', note: '10 Schlösselgasse · 1 noite.', amount: 37.8 },
+      { id: 'train-vienna-prague', category: 'Transporte', title: 'Viena → Praga', note: 'Valor individual informado.', amount: 17.2 },
+      { id: 'hostel-prague', category: 'Hospedagem', title: 'Drunken Monkey Praga', note: 'Pod Výtopnou 2 · 2 noites · total dividido por cinco.', amount: 44 },
+      { id: 'pubcrawl', category: 'Noite', title: 'Drunken Monkey Pub Crawl', note: '07/12, 22:00 no hostel · pagamento na hora · estimativa dividida por cinco.', amount: 6.4 },
+      { id: 'castle-prague', category: 'Atração', title: 'Castelo de Praga, Main Circuit', note: 'Ainda não fechado.', amount: null },
+      { id: 'night-bus', category: 'Transporte', title: 'Ônibus noturno Praga → Budapeste', note: 'Ônibus direto com assento relax · valor individual.', amount: 27.5 },
+      { id: 'hostel-budapest', category: 'Hospedagem', title: 'Hive Hostel Budapeste', note: 'Dob utca 19 · 2 noites · total dividido por cinco.', amount: 36.43 },
+      { id: 'hive-pubcrawl', category: 'Noite', title: 'Hive Pub Crawl', note: '11/12, 20:00 no próprio pub do Hive · valor individual.', amount: 38.4 },
+      { id: 'train-budapest-bratislava', category: 'Transporte', title: 'Budapeste → Bratislava', note: 'Valor total dividido por cinco.', amount: 16.4 },
+      { id: 'hostel-bratislava', category: 'Hospedagem', title: 'Wild Elephants Bratislava', note: 'Námestie SNP 5 · 1 noite · total dividido por cinco.', amount: 25 }
     ],
     checklist: [
       { id: 'passport', title: 'Passaporte e IRP', note: 'Ter os dois acessíveis nos deslocamentos.' },
       { id: 'flights', title: 'Boarding passes dos voos', note: 'Baixar no celular e manter cópia no e-mail.' },
-      { id: 'trains', title: 'Tickets de trem e ônibus', note: 'Especialmente o EN 477 e os dois horários pendentes.' },
+      { id: 'trains', title: 'Tickets de trem e ônibus', note: 'Especialmente o ônibus noturno e os dois horários pendentes.' },
       { id: 'bank', title: 'Cartão e limite internacional', note: 'Avisar o banco se necessário e levar cartão reserva.' },
       { id: 'charger', title: 'Carregador, cabo e power bank', note: 'Power bank sempre na bagagem de mão.' },
       { id: 'adapter', title: 'Adaptador tipo C/F', note: 'Irlanda usa tomada tipo G; Europa Central usa C/F.' },
       { id: 'roaming', title: 'Roaming ou eSIM', note: 'Confirmar cobertura na Áustria, Tchéquia, Hungria e Eslováquia.' },
       { id: 'cold', title: 'Casaco, camadas e luvas', note: 'Noites de mercado de Natal podem ser bem frias.' },
-      { id: 'party', title: 'Roupa para Pub Crawl e Boat Party', note: 'Levar opção de festa que não ocupe muito espaço.' },
+      { id: 'party', title: 'Roupa para os Pub Crawls', note: 'Levar opção de festa que não ocupe muito espaço.' },
       { id: 'offline', title: 'Baixar mapas offline', note: 'Baixar áreas das quatro cidades no Google Maps.' }
     ]
   };
@@ -149,7 +149,7 @@
         <p class="eyebrow">06 a 13 de dezembro de 2026</p>
         <h1>Natal<br>Europeu</h1>
         <p class="hero-copy">Viena, Praga, Budapeste e Bratislava.</p>
-        <div class="route-chips"><span>6 amigos</span><span>4 cidades</span><span>1 noite no trem</span></div>
+        <div class="route-chips"><span>5 amigos</span><span>4 cidades</span><span>1 noite no ônibus</span></div>
       </div>
       <div class="section-heading"><div><h2>${isTripDate() ? 'Próxima parada' : 'Ponto de partida'}</h2><p>${day.date} · ${day.city}</p></div></div>
       <article class="next-card">
@@ -177,8 +177,8 @@
   }
 
   function renderCosts() {
-    const paidTotal = trip.costs.filter((item) => savedPaid(item.id)).reduce((sum, item) => sum + item.amount, 0);
-    const planned = trip.costs.reduce((sum, item) => sum + item.amount, 0);
+    const paidTotal = trip.costs.filter((item) => savedPaid(item.id) && Number.isFinite(item.amount)).reduce((sum, item) => sum + item.amount, 0);
+    const planned = trip.costs.reduce((sum, item) => sum + (Number.isFinite(item.amount) ? item.amount : 0), 0);
     const extras = state.expenses.reduce((sum, item) => sum + Number(item.amount), 0);
     const percent = Math.round((paidTotal / planned) * 100);
     $('#screen-costs').innerHTML = `
@@ -187,7 +187,7 @@
       <div class="section-heading"><div><h2>Planejado</h2><p>Toque na caixa quando pagar</p></div></div>
       <div class="cost-list">${trip.costs.map((item) => {
         const paid = savedPaid(item.id);
-        return `<label class="cost-item ${paid ? 'is-paid' : ''}"><input class="cost-check" type="checkbox" data-cost="${item.id}" ${paid ? 'checked' : ''}><span class="cost-details"><strong>${item.title}</strong><small>${item.category} · ${item.note}</small>${paid ? '<span class="status-label">PAGO</span>' : ''}</span><span class="cost-value">${euro(item.amount)}</span></label>`;
+        return `<label class="cost-item ${paid ? 'is-paid' : ''}"><input class="cost-check" type="checkbox" data-cost="${item.id}" ${paid ? 'checked' : ''}><span class="cost-details"><strong>${item.title}</strong><small>${item.category} · ${item.note}</small>${paid ? '<span class="status-label">PAGO</span>' : ''}</span><span class="cost-value">${item.amount == null ? 'A confirmar' : euro(item.amount)}</span></label>`;
       }).join('')}</div>
       <div class="section-heading"><div><h2>Gastos reais</h2><p>Comida, bebida ou extras</p></div></div>
       <form id="expense-form" class="expense-form"><select id="expense-category" aria-label="Categoria"><option>Alimentação</option><option>Bebida</option><option>Transporte local</option><option>Extra</option></select><input id="expense-description" required maxlength="42" placeholder="Descrição"><input id="expense-amount" required min="0.01" step="0.01" inputmode="decimal" type="number" placeholder="€"><button class="primary-button" type="submit">+</button></form>
@@ -214,18 +214,18 @@
 
   function renderGuide() {
     const stays = [
-      ['Viena', 'JO&JOE Hostel', '1 noite · €29', 'JO&JOE Vienna'],
-      ['Praga', 'Drunken Monkey Hostel', '2 noites · €40', 'Drunken Monkey Hostel Prague'],
-      ['Budapeste', 'Hive Hostel', '2 noites · €40', 'Hive Party Hostel Budapest'],
-      ['Bratislava', 'Wild Elephants Hostel', '1 noite · €18', 'Wild Elephants Hostel Bratislava']
+      ['Viena', 'Apartamento em Josefstadt', '06/12 a 07/12 · 10 Schlösselgasse, 1080 Vienna · €37,80 por pessoa', '10 Schlösselgasse, 1080 Vienna, Austria'],
+      ['Praga', 'Drunken Monkey Hostel', '07/12 a 09/12 · Pod Výtopnou 2, Praha 8 · €44 por pessoa', 'Drunken Monkey Hostel, Pod Výtopnou 2, Prague'],
+      ['Budapeste', 'The Hive Party Hostel', '10/12 a 12/12 · Dob utca 19, 1074 Budapest · €36,43 por pessoa', 'The Hive Party Hostel, Dob utca 19, Budapest'],
+      ['Bratislava', 'Wild Elephants Hostel', '12/12 a 13/12 · Námestie SNP 5, 811 06 Bratislava · €25 por pessoa', 'Wild Elephants Hostel, Námestie SNP 5, Bratislava']
     ];
     $('#screen-guide').innerHTML = `
       <header class="page-intro"><h1 id="guide-title" class="page-title">Guia</h1><p>Hospedagem, checklist, reservas e instruções para usar offline.</p></header>
-      <section class="guide-card"><h3>Hostels</h3>${stays.map(([city, hostel, note, query]) => `<a class="stay-row" href="${mapsUrl(query)}" target="_blank" rel="noopener"><span class="stay-icon">⌂</span><span><strong>${city} · ${hostel}</strong><small>${note}</small></span><span>⌖</span></a>`).join('')}</section>
+      <section class="guide-card"><h3>Onde vamos ficar</h3>${stays.map(([city, hostel, note, query]) => `<a class="stay-row" href="${mapsUrl(query)}" target="_blank" rel="noopener"><span class="stay-icon">⌂</span><span><strong>${city} · ${hostel}</strong><small>${note}</small></span><span>⌖</span></a>`).join('')}</section>
       <section class="guide-card"><h3>Reservas e pontos de encontro</h3>
         <a class="link-row" href="${mapsUrl('Drunken Monkey Hostel Prague')}" target="_blank" rel="noopener">07/12 · Pub Crawl, 22:00 no Drunken Monkey <span>⌖</span></a>
-        <a class="link-row" href="${mapsUrl('Akadémia 2 Ponton Budapest')}" target="_blank" rel="noopener">11/12 · Boat Party, 22:30 no Akadémia 2 Ponton <span>⌖</span></a>
-        <a class="link-row" href="https://www.cd.cz/en/spojeni-a-jizdenka/" target="_blank" rel="noopener">Trem noturno EN 477 e demais trens <span>↗</span></a>
+        <a class="link-row" href="${mapsUrl('The Hive Party Hostel, Dob utca 19, Budapest')}" target="_blank" rel="noopener">11/12 · Hive Pub Crawl, 20:00 no próprio pub <span>⌖</span></a>
+        <a class="link-row" href="https://regiojet.com/" target="_blank" rel="noopener">Ônibus noturno direto Praga → Budapeste <span>↗</span></a>
         <a class="link-row" href="https://www.slovaklines.sk/en/" target="_blank" rel="noopener">Slovak Lines, BTS → Viena <span>↗</span></a>
         <a class="link-row" href="./credits.html">Créditos e licenças das imagens <span>↗</span></a>
       </section>
