@@ -1,6 +1,6 @@
-const CACHE = 'natal-2026-v4';
+const CACHE = 'natal-2026-v5';
 const CORE = [
-  './', './index.html', './credits.html', './styles.css?v=3', './app.js?v=4', './storage.js?v=2', './manifest.json',
+  './', './index.html', './credits.html', './styles.css?v=3', './app.js?v=5', './storage.js?v=3', './manifest.json',
   './assets/icon-192.png', './assets/icon-512.png',
   './assets/images/vienna-stephansdom.jpg', './assets/images/vienna-belvedere.jpg',
   './assets/images/prague-old-town-market.jpg', './assets/images/prague-st-vitus.jpg',

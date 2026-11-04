@@ -1,12 +1,12 @@
 /* Persistência versionada: localStorage + IndexedDB, com restauração do snapshot mais recente. */
 window.TripStorage = (() => {
-  const KEY = 'natal-2026-state-v2';
-  const DB_NAME = 'natal-2026-db-v2';
+  const KEY = 'natal-2026-state-v3';
+  const DB_NAME = 'natal-2026-db-v3';
   const STORE = 'snapshots';
-  const DEFAULT_STATE = { version: 1, initialized: false, paid: [], expenses: [], checked: [], savedAt: 0 };
+  const DEFAULT_STATE = { version: 2, initialized: false, paid: [], expenses: [], checked: [], savedAt: 0 };
 
   const clean = (value) => ({
-    version: 1,
+    version: Number(value?.version || 1),
     initialized: Boolean(value?.initialized),
     paid: Array.isArray(value?.paid) ? value.paid : [],
     expenses: Array.isArray(value?.expenses) ? value.expenses : [],

@@ -20,7 +20,7 @@ const checks = [
   ['Índice carrega recursos relativos', !/href="\/(?!\/)/.test(index) && !/src="\/(?!\/)/.test(index)],
   ['Persistência IndexedDB', storage.includes('indexedDB')],
   ['Persistência localStorage', storage.includes('localStorage')],
-  ['Estado versionado', storage.includes('version: 1')],
+  ['Estado versionado', storage.includes('version: 2')],
   ['Ação Google Maps', app.includes('google.com/maps/search')],
   ['Controle de custos', app.includes('data-cost')],
   ['Checklist persistente', app.includes('data-check')],

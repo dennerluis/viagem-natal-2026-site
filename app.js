@@ -33,7 +33,7 @@
         intro: 'Dia começa ao meio-dia para respeitar a ressaca. Castelo de Praga é a única atração paga.',
         items: [
           { time: 'Até 12:00', title: 'Dormir, banho e brunch', category: 'Recuperação', desc: 'Sem alarme depois do Pub Crawl. Tomem um brunch reforçado perto do hostel antes de sair.', maps: 'Drunken Monkey Hostel Prague', image: 'prague-charles-bridge.jpg', cost: 'Consumo a registrar' },
-          { time: '12:30', title: 'Castelo de Praga, Main Circuit', category: 'Entrada a confirmar', desc: 'St. Vitus Cathedral, Old Royal Palace, St. George’s Basilica e Golden Lane. Reservem cerca de 3h15. A entrada ainda não foi fechada.', maps: 'Prague Castle', image: 'prague-st-vitus.jpg', cost: 'Valor a confirmar' },
+          { time: '12:30', title: 'Castelo de Praga, Main Circuit', category: 'Entrada confirmada', desc: 'St. Vitus Cathedral, Old Royal Palace, St. George’s Basilica e Golden Lane. Reservem cerca de 3h15. O ingresso está confirmado, mas ainda não foi pago.', maps: 'Prague Castle', image: 'prague-st-vitus.jpg', cost: '€18,44 por pessoa, confirmado e não pago' },
           { time: '16:00', title: 'Malá Strana e Lennon Wall', category: 'Passeio gratuito', desc: 'Almoço tardio em Malá Strana, St. Nicholas por fora e Lennon Wall.', maps: 'Lennon Wall Prague', image: 'prague-lennon-wall.jpg', cost: 'Gratuito' },
           { time: '17:45', title: 'Charles Bridge iluminada', category: 'Passeio gratuito', desc: 'Em dezembro escurece cedo. A ponte iluminada é uma das imagens mais bonitas de Praga.', maps: 'Charles Bridge Prague', image: 'prague-charles-bridge.jpg', cost: 'Gratuito' },
           { time: '18:45', title: 'Klementinum por fora e mercados', category: 'Christmas Market', desc: 'Passagem pela entrada do Klementinum, Old Town Square e, se houver energia, Wenceslas Square.', maps: 'Klementinum Prague', image: 'prague-old-town-market.jpg', cost: 'Gratuito, consumo a registrar' }
@@ -98,8 +98,8 @@
       { id: 'apartment-vienna', category: 'Hospedagem', title: 'Apartamento em Josefstadt, Viena', note: '10 Schlösselgasse · 1 noite.', amount: 37.8 },
       { id: 'train-vienna-prague', category: 'Transporte', title: 'Viena → Praga', note: 'Valor individual informado.', amount: 17.2 },
       { id: 'hostel-prague', category: 'Hospedagem', title: 'Drunken Monkey Praga', note: 'Pod Výtopnou 2 · 2 noites · total dividido por cinco.', amount: 44 },
-      { id: 'pubcrawl', category: 'Noite', title: 'Drunken Monkey Pub Crawl', note: '07/12, 22:00 no hostel · pagamento na hora · estimativa dividida por cinco.', amount: 6.4 },
-      { id: 'castle-prague', category: 'Atração', title: 'Castelo de Praga, Main Circuit', note: 'Ainda não fechado.', amount: null },
+      { id: 'pubcrawl', category: 'Noite', title: 'Drunken Monkey Pub Crawl', note: '07/12, 22:00 no hostel · €32 por pessoa · pagamento na hora.', amount: 32 },
+      { id: 'castle-prague', category: 'Atração', title: 'Castelo de Praga, Main Circuit', note: 'Entrada confirmada, ainda não paga.', amount: 18.44 },
       { id: 'night-bus', category: 'Transporte', title: 'Ônibus noturno Praga → Budapeste', note: 'Ônibus direto com assento relax · valor individual.', amount: 27.5 },
       { id: 'hostel-budapest', category: 'Hospedagem', title: 'Hive Hostel Budapeste', note: 'Dob utca 19 · 2 noites · total dividido por cinco.', amount: 36.43 },
       { id: 'hive-pubcrawl', category: 'Noite', title: 'Hive Pub Crawl', note: '11/12, 20:00 no próprio pub do Hive · valor individual.', amount: 38.4 },
@@ -264,8 +264,9 @@
 
   async function boot() {
     state = await TripStorage.load();
-    if (!state.initialized) {
-      state.paid = trip.costs.filter((item) => item.paid).map((item) => item.id);
+    if (!state.initialized || state.version < 2) {
+      state.paid = trip.costs.filter((item) => item.id !== 'castle-prague').map((item) => item.id);
+      state.version = 2;
       state.initialized = true;
       state = await TripStorage.save(state);
     }
